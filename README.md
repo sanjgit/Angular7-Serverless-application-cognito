@@ -1,27 +1,53 @@
-# BConeAngApp
+Angular7-AWS(Cognito-Lamda-ApiGateway-S3-cloudfront-DynamoDB)
+===================================================
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
 
-## Development server
+## What does this app do?
+![QuickStart Angular7 Cognito App](Serverless_Web_App_LP_assets.png?raw=true)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Tech Stack
+### Required Tools
+* [aws cli](http://docs.aws.amazon.com/cli/latest/userguide/installing.html)
+* [eb cli](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-install.html)
+* [npm](https://www.npmjs.com/)
+* [angular-cli](https://github.com/angular/angular-cli)
 
-## Code scaffolding
+### Frameworks
+* [AWS JavaScript SDK](http://docs.aws.amazon.com/AWSJavaScriptSDK/guide/browser-intro.html)
+* [Angular 7](https://angular.io/docs/ts/latest/quickstart.html)
+    * [TypeScript](https://www.typescriptlang.org/docs/tutorial.html)
+* [Bootstrap](http://getbootstrap.com/)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## AWS Setup
+##### Install the required tools (the installation script only runs on Linux and Mac)
+* Create an AWS account
+* Install [npm](https://www.npmjs.com/)
+* [Install or update your aws cli](http://docs.aws.amazon.com/cli/latest/userguide/installing.html) 
+* [Install or update your eb cli](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-install.html) 
+* [Install angular-cli](https://github.com/angular/angular-cli)
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Getting the code and running it locally
+_This uses the pre-configured AWS resources hosted by AWS_
 
-## Running unit tests
+```
+# Clone it from github
+git clone --depth 1 git@github.com/sanjgit/Angular7-Serverless-application-cognito.git
+```
+```
+# Install the NPM packages
+cd Angular7-Serverless-application-cognito
+npm install
+```
+```
+# Run the app in dev mode
+ng serve
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Creating AWS Resources
+This sample application can be deployed to either Elastic Beanstalk or S3. S3 will host this application as a static site
+while Elastic Beanstalk gives you the capability of adding backend operations to the application. 
 
-## Running end-to-end tests
+* [build-serverless-web-app-lambda-apigateway-s3-dynamodb-cognito](https://aws.amazon.com/getting-started/projects/build-serverless-web-app-lambda-apigateway-s3-dynamodb-cognito/)
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
